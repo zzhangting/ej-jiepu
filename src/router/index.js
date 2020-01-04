@@ -54,6 +54,76 @@ export const constantRoutes = [
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
   },
+  {
+    path: '/customer',
+    component: Layout,
+    children: [{
+      path: 'List',
+      name: 'CustomerList',
+      component: () => import('@/pages/customer/List'),
+      meta: { title: '顾客管理', icon: 'dashboard' }
+    }]
+  },
+  {
+    path: '/employee',
+    component: Layout,
+    children: [{
+      path: 'List',
+      name: 'EmployeeList',
+      component: () => import('@/pages/employee/List'),
+      meta: { title: '员工管理', icon: 'example' }
+    }]
+  },
+  {
+    path: '/product',
+    component: Layout,
+    children: [{
+      path: 'List',
+      name: 'ProductList',
+      component: () => import('@/pages/product/List'),
+      meta: { title: '项目管理', icon: 'dashboard' }
+    }]
+  },
+  {
+    path: '/category',
+    component: Layout,
+    children: [{
+      path: 'List',
+      name: 'CategoryList',
+      component: () => import('@/pages/category/List'),
+      meta: { title: '栏目管理', icon: 'tree' }
+    }]
+  },
+  {
+    path: '/order',
+    component: Layout,
+    children: [{
+      path: 'List',
+      name: 'OrderList',
+      component: () => import('@/pages/order/List'),
+      meta: { title: '订单管理', icon: 'tree' }
+    }]
+  },
+  {
+    path: '/commit',
+    component: Layout,
+    children: [{
+      path: 'List',
+      name: 'CommitList',
+      component: () => import('@/pages/commit/List'),
+      meta: { title: '评论管理', icon: 'tree' }
+    }]
+  },
+  {
+    path: '/address',
+    component: Layout,
+    children: [{
+      path: 'List',
+      name: 'AddressList',
+      component: () => import('@/pages/address/List'),
+      meta: { title: '地址管理', icon: 'example' }
+    }]
+  },
 
   {
     path: '/example',
@@ -148,16 +218,7 @@ export const constantRoutes = [
     ]
   },
 
-  {
-    path: 'external-link',
-    component: Layout,
-    children: [
-      {
-        path: 'https://panjiachen.github.io/vue-element-admin-site/#/',
-        meta: { title: 'External Link', icon: 'link' }
-      }
-    ]
-  },
+  
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
