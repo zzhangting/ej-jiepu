@@ -81,7 +81,7 @@ export const constantRoutes = [
       path: 'List',
       name: 'ProductList',
       component: () => import('@/pages/product/List'),
-      meta: { title: '项目管理', icon: 'dashboard' }
+      meta: { title: '产品管理', icon: 'dashboard' }
     }]
   },
   {
