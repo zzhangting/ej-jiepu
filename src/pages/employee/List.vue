@@ -7,7 +7,7 @@
     </div>
     <!-- /按钮 -->
     <!-- 表格 -->
-    <el-table :data="employees">
+    <el-table :data="employees">     
       <el-table-column fixed="left" prop="id" label="编号"></el-table-column>
       <el-table-column  fixed="left" prop="username" label="真实姓名"></el-table-column>
       <el-table-column  prop="realname" label="姓名"></el-table-column>
